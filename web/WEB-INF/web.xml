@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>slogin</servlet-name>
+        <servlet-class>slogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>tlogin</servlet-name>
+        <servlet-class>tlogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>makeq</servlet-name>
+        <servlet-class>makeq</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>slogin</servlet-name>
+        <url-pattern>/slogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>tlogin</servlet-name>
+        <url-pattern>/tlogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>makeq</servlet-name>
+        <url-pattern>/makeq</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
